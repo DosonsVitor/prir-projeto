@@ -16,7 +16,9 @@
 * A Figura 2 Ilustra as configurações para a importação das VMs.
 
 <p><center> Figura 2: Criando uma VM apartir de um arquivo OVA</center></p>   
-   <img src="figures/import-ova1.png" alt=""
-	title="Figura 2a: Clique em Ferramentas/Importar" width="400" height="auto"/> <br/>
+   <img src="figures/import-ova1.png" alt="" 
+	title="Figura 2a: Clique em Ferramentas/Importar" width="800" height="auto"/> <br/>
    <img src="figures/import-ova2.png" alt=""
-	title="Figura 2b: configurações de importação" />
+	title="Figura 2c: caminho do arquivo" />
+   <img src="figures/import-ova3.png" alt=""
+	title="Figura 2c: configurações de importação" />
