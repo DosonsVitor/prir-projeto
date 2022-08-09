@@ -5,5 +5,5 @@
 * A Figura 1 ilustra a topologia de Rede
 
 <p><center> Figura 1: Topologia de Rede estrela, com oito VMs com suas NICs em modo BRIDGE</center></p>   
-   <img src="figures/Star-Network.png" alt=""
+   <img src="figures/star-network.png" alt=""
 	title="Figura 1: Topologia de Rede Estrela" width="800" height="280" />
