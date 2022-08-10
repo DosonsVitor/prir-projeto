@@ -36,9 +36,9 @@ Tabela 3: PC's físicos reservados para cada máquina
 -------------------------------
 |  DESCRICAO  |   PC FÍSICO   |
 -------------------------------
-| PC1         | LAB 1 - PC 20 |
+| PC1         | Notebook      |
 | PC2         | LAB 1 - PC 25 |
 | PC3         | LAB 1 - PC 19 |
-| PC4         | LAB 1 - PC 26 |
+| PC4         | LAB 1 - PC 20 |
 -------------------------------
 ```
