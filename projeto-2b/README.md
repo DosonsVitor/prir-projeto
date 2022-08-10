@@ -6,4 +6,4 @@ Espaço destinado para o projeto do segundo bimestre proposto pelo professor [Al
 - Para acessar as configurações pré requisitadas pelo professor (tabelas de definições de nomes e IPs para todas as VMs), [clique aqui](pre-definicoes.md)
 
 ### Roteiro geral do projeto
-- Para acessar todo o roteiro com o passo a passo da criação e configuração da rede, [clique aqui]()
+- Para acessar todo o roteiro com o passo a passo da criação e configuração da rede, [clique aqui](https://github.com/DosonsVitor/prir-projeto/blob/main/projeto-2b/roteiro.md)
