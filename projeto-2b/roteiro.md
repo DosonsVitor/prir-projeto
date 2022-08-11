@@ -6,10 +6,10 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 ## Súmario
 
-### Abordagem geral
-1. Objetivo
-2. Topologia
-3. Tabela
+### [Abordagem geral](#abordagem-geral-1)
+1. [Objetivo](#1-objetivo)
+2. [Topologia](#2-topologia)
+3. [Tabela](#3-tabela)
 
 ### Parte virtual da rede
 1. Importar arquivos OVA no VirtualBox
