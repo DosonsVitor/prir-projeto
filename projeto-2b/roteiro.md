@@ -9,7 +9,7 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 ### [Abordagem geral](#abordagem-geral-1)
 1. [Objetivo](#1-objetivo)
 2. [Topologia](#2-topologia)
-3. [Tabela](#3-tabela)
+3. [Endereçamento](#3-endereçamento)
 
 ### Parte virtual da rede
 1. Importar arquivos OVA no VirtualBox
@@ -47,12 +47,12 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 # 
 
-### 3. Tabela
-* Para uma melhor organização aconselhamos que você organize todas as maquinas com sua descrição, o endereço IP detrminado para cada uma, seu hostname, seu FQDN e também sua aliase.
+### 3. Endereçamento
+* Para uma melhor organização aconselhamos que você organize todas as maquinas com sua descrição, o endereço IP determinado para cada uma, seu hostname, seu FQDN e também sua aliase.
 * No nosso caso determinamos todos os endereços IPs da rede dentro do padrão `192.168.24.[n]`, com `n` dentro do intervalo determinado pelo professor para cada grupo, no nosso caso entre 33 e 46.
 * Para o hostname utilizaremos o padrão `srv-vm[n]-pc[x]`, com `n` sendo o número da maquina virtual e `x` sendo o número do PC na rede.
 * Para o FQDN utilizaremos o padrão `[nome]+[n].grupo3-924.ifalara.net`, sendo `nome` o nome do responsavel pela maquina e `n` o numero da maquina virtual.
-* Para as aliases utilizaremos o primeiro e o segundo nome para as maquinas 1 e 2 de cada responsavel, respectivamente.
+* Para as aliases utilizaremos o primeiro e o segundo nome para as maquinas 1 e 2 de cada responsável, respectivamente.
 * A tabela 1 mostra detalhadamente essas definições.
 
 ```
@@ -71,6 +71,8 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 -----------------------------------------------------------------------------------------------------
 ```
 -----------------------------------------------------------------------------------------------------
+
+## Parte virtual da rede 
 
 ### Importar arquivos OVA no VirtualBox
 
