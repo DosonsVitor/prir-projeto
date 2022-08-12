@@ -15,7 +15,7 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 1. [Baixar ISO](#1-baixar-iso)
 2. [Criar Maquina virtual](#2-criar-maquina-virtual)
 3. [Importar ISO](#3-importar-iso)
-4. Instalando o sistema
+4. [Instalação do sistema](#4-instalação-do-sistema)
 
 ### Parte virtual da rede
 
@@ -84,6 +84,8 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 * O sistema escolhida para o tutorial foi o Ubuntu Live Server 22.04.1, [clique aqui](https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso?_ga=2.145907636.1635110145.1660307260-2090410815.1656208228) para fazer o download da ISO.
 * Você pode optar por outra versão ou outro sistema, fica a seu criterio, mas fique ciente que algumas configurações podem variar adepender do Sistema operacional.
 
+#
+
 ### 2. Criar Maquina Virtual
 
 * Para criar uma máquina virtual utilizando o virtual box você deve ir em `Ferramentas > Novo`. 
@@ -132,8 +134,25 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 
 * Pronto, sua máquina virtual está criada e pronta para a instalação do sistema operacional.
 
+#
+
 ### 3. Importar ISO
 
+* Antes de iniciar a instalação do sistema vamos selecionar a imagem (ISO) para instalação, para isso vá na sua máquina virtual e clique em Iniciar.
+<p><center> Figura 2.1: Importando a ISO, passo 1</center></p>
+<img src="figures/importar-iso-1.png" title="Figura 2.1: Importando a ISO, passo 1" width="1000" />
+
+* Quando a máquina iniciar escolha o arquivo baixado e em seguida clique em inciar.
+<p><center> Figura 2.2: Importando a ISO, passo 2</center></p>
+<img src="figures/importar-iso-2.png" title="Figura 2.2: Importando a ISO, passo 2" width="800" />
+
+#
+
+### 4. Instalação do sistema
+
+* 
+<p><center> Figura 2.1: Importando a ISO, passo 1</center></p>
+<img src="figures/instalar-so-1.png" title="Figura 2.1: Importando a ISO, passo 1" width="500" />
 
 ---------------------------------------------------------------------------------------------------------
 
