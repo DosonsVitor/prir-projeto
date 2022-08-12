@@ -47,7 +47,7 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 * Na nossa rede todos os 4 PCs utilizados precisam estar conectados a um switch, fazendo com que as máquinas virtuais tabém possam urilizar desta conexão caso configuradas de maneira correta conforme este guia. 
 * Segue imagem da topologia da rede na figura 1.
 
-<p><center> Figura 2: Topologia de Rede estrela, com oito VMs com suas NICs em modo BRIDGE</center></p>   
+<p><center> Figura 1: Topologia de Rede estrela, com oito VMs com suas NICs em modo BRIDGE</center></p>   
 <img src="figures/star-network.svg" title="Figura 1: Topologia de Rede Estrela" width="1000" />
 
 # 
@@ -90,8 +90,8 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 
 * Para criar uma máquina virtual utilizando o virtual box você deve ir em `Ferramentas > Novo`. 
 
-<p><center> Figura 1.1: Criando Máquina virtual, passo 1</center></p>   
-<img src="figures/cirar-vm-1.png" title="Figura 1.1: criando maquina virtual, passo 1" width="1000" />
+<p><center> Figura 2.1: Criando Máquina virtual, passo 1</center></p>   
+<img src="figures/cirar-vm-1.png" title="Figura 2.1: criando maquina virtual, passo 1" width="1000" />
 
 * Em seguida, você deve: 
   * Escolher o nome de sua VM, neste tutorial utilazaremos o padrão `VM[n]-PC[x]`, sendo `n` o número da maquina e `x` o número do pc;
@@ -99,38 +99,38 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
   * Selecionar o sistema operacional, no nosso caso `Linux`;
   * Selecionar a distribuição do sistema, no nosso caso `Ubuntu (64-bit)`.
 
-<p><center> Figura 1.2: Criando Máquina virtual, passo 2</center></p>   
-<img src="figures/cirar-vm-2.png" title="Figura 1.2: criando maquina virtual, passo 2" width="500" />
+<p><center> Figura 2.2: Criando Máquina virtual, passo 2</center></p>   
+<img src="figures/cirar-vm-2.png" title="Figura 2.2: criando maquina virtual, passo 2" width="500" />
 
 * Após isso você selecionar a quantidade de mémoria RAM da máquina, recomendamos pelo menos 1GB, ou 1024MB.
-<p><center> Figura 1.3: Criando Máquina virtual, passo 3</center></p>
-<img src="figures/cirar-vm-3.png" title="Figura 1.3: criando maquina virtual, passo 3" width="500" />
+<p><center> Figura 2.3: Criando Máquina virtual, passo 3</center></p>
+<img src="figures/cirar-vm-3.png" title="Figura 2.3: criando maquina virtual, passo 3" width="500" />
 
 * Agora você deve selecionar o tipo de criação do seu disco rigido, iremos criar um novo disco do zero.
-<p><center> Figura 1.4: Criando Máquina virtual, passo 4</center></p>
-<img src="figures/cirar-vm-4.png" title="Figura 1.4: criando maquina virtual, passo 4" width="500" />
+<p><center> Figura 2.4: Criando Máquina virtual, passo 4</center></p>
+<img src="figures/cirar-vm-4.png" title="Figura 2.4: criando maquina virtual, passo 4" width="500" />
 
 * Agora você deve selecionar o tipo de arquivo do seu disco rigido, utilizaremos o tipo `VDI (VirtualBox Disk Image`).
-<p><center> Figura 1.5: Criando Máquina virtual, passo 5</center></p>
-<img src="figures/cirar-vm-5.png" title="Figura 1.5: criando maquina virtual, passo 5" width="500" />
+<p><center> Figura 2.5: Criando Máquina virtual, passo 5</center></p>
+<img src="figures/cirar-vm-5.png" title="Figura 2.5: criando maquina virtual, passo 5" width="500" />
 
 * Agora você escolher o tipo de armazenamento no seu disco, vamos usar o tipo `dinamicamente alocado`, nesse tipo de armazenamento o disco irá expandir e ocupar memoria no seu computador somente quando necéssario, ou seja o disco vai aumentando conforme o sistema precise.
-<p><center> Figura 1.6: Criando Máquina virtual, passo 6</center></p>
-<img src="figures/cirar-vm-6.png" title="Figura 1.6: criando maquina virtual, passo 6" width="500" />
+<p><center> Figura 2.6: Criando Máquina virtual, passo 6</center></p>
+<img src="figures/cirar-vm-6.png" title="Figura 2.6: criando maquina virtual, passo 6" width="500" />
 
 * Nessa parte você deve selecionar o local do disco rigido virtual na memoria do seu computador e o tamanho dele, essa parte fica totalmente a seu criterio e no quanto você precisa.
-<p><center> Figura 1.7: Criando Máquina virtual, passo 7</center></p>
-<img src="figures/cirar-vm-7.png" title="Figura 1.7: criando maquina virtual, passo 7" width="500" />
+<p><center> Figura 2.7: Criando Máquina virtual, passo 7</center></p>
+<img src="figures/cirar-vm-7.png" title="Figura 2.7: criando maquina virtual, passo 7" width="500" />
 
 * Feito isso sua máquina virtual já está pronta, mas antes de iniciar ela iremos certificar de que ela tem ao menos 2 cores em seu processador.
 * Para fazer isso acesse a maquina e em seguida vá em configurações, no nosso caso `VM1-PC1 > Configurações`
 
-<p><center> Figura 1.8: Criando Máquina virtual, passo 8</center></p>
-<img src="figures/cirar-vm-8.png" title="Figura 1.8: criando maquina virtual, passo 8" width="1000" />
+<p><center> Figura 2.8: Criando Máquina virtual, passo 8</center></p>
+<img src="figures/cirar-vm-8.png" title="Figura 2.8: criando maquina virtual, passo 8" width="1000" />
 
 * Então vá em `Sistema > Processador` e verifique quantos cores estão alocados para a máquina virtual, o minimo aconselhavel são 2.
-<p><center> Figura 1.9: Criando Máquina virtual, passo 9</center></p>
-<img src="figures/cirar-vm-9.png" title="Figura 1.9: criando maquina virtual, passo 9" width="800" />
+<p><center> Figura 2.9: Criando Máquina virtual, passo 9</center></p>
+<img src="figures/cirar-vm-9.png" title="Figura 2.9: criando maquina virtual, passo 9" width="800" />
 
 * Pronto, sua máquina virtual está criada e pronta para a instalação do sistema operacional.
 
@@ -139,20 +139,28 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 ### 3. Importar ISO
 
 * Antes de iniciar a instalação do sistema vamos selecionar a imagem (ISO) para instalação, para isso vá na sua máquina virtual e clique em Iniciar.
-<p><center> Figura 2.1: Importando a ISO, passo 1</center></p>
-<img src="figures/importar-iso-1.png" title="Figura 2.1: Importando a ISO, passo 1" width="1000" />
+<p><center> Figura 3.1: Importando a ISO, passo 1</center></p>
+<img src="figures/importar-iso-1.png" title="Figura 3.1: Importando a ISO, passo 1" width="1000" />
 
 * Quando a máquina iniciar escolha o arquivo baixado e em seguida clique em inciar.
-<p><center> Figura 2.2: Importando a ISO, passo 2</center></p>
-<img src="figures/importar-iso-2.png" title="Figura 2.2: Importando a ISO, passo 2" width="800" />
+<p><center> Figura 3.2: Importando a ISO, passo 2</center></p>
+<img src="figures/importar-iso-2.png" title="Figura 3.2: Importando a ISO, passo 2" width="800" />
 
 #
 
 ### 4. Instalação do sistema
 
-* 
-<p><center> Figura 2.1: Importando a ISO, passo 1</center></p>
-<img src="figures/instalar-so-1.png" title="Figura 2.1: Importando a ISO, passo 1" width="500" />
+* Quando a máquina carregar a imagem e iniciar escolha a opção `Try or install Ubuntu Server`
+<p><center> Figura 4.1: Instalar SO, passo 1</center></p>
+<img src="figures/instalar-so-1.png" title="Figura 4.1: Instalar SO, passo 1" width="600" />
+
+* Em seguida selecione o idioma que você deseja para o servidor
+<p><center> Figura 4.2: Instalar SO, passo 2 - Escolher idioma</center></p>
+<img src="figures/instalar-so-2.png" title="Figura 4.2: Instalar SO, passo 1 - escolher idioma" width="600" />
+
+* Em seguida selecione o idioma que você deseja para o servidor
+<p><center> Figura 4.3: Instalar SO, passo 2 - Escolher idioma</center></p>
+<img src="figures/instalar-so-3.png" title="Figura 4.3: Instalar SO, passo 1 - escolher idioma" width="600" />
 
 ---------------------------------------------------------------------------------------------------------
 
