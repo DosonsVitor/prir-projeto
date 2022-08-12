@@ -1,6 +1,6 @@
 # Passo a passo - Criando rede virtual com Ubuntu Server
 
-Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela com 8 servidores virtuais com o sistema operacional Ubuntu instalado. 
+Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela com 8 servidores virtuais com o sistema operacional Ubuntu instalado.
 
 -----------------------------------------------------------------------------------------------------
 
@@ -11,14 +11,19 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 2. [Topologia](#2-topologia)
 3. [Endereçamento](#3-endereçamento)
 
+### Instalanado o Sistema
+1. Baixar ISO
+2. Criar Maquina virtual
+3. Importar ISO
+4. Instalando o sistema
+
 ### Parte virtual da rede
-1. Importar arquivos OVA no VirtualBox
-2. Mudar hostname
-3. Instalar pacotes necessários
-4. Acessar o arquivo netplan
-5. Editar o arquivo netplan
-6. Mudar adaptador de rede no VirtualBox
-7. Configurar serviço de nomes estático
+
+1. Instalar pacotes necessários
+2. Acessar o arquivo netplan
+3. Editar o arquivo netplan
+4. Mudar adaptador de rede no VirtualBox
+5. Configurar serviço de nomes estático
 
 ### Parte física da rede
 1. Conectar maquinas
@@ -42,7 +47,7 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 * Na nossa rede todos os 4 PCs utilizados precisam estar conectados a um switch, fazendo com que as máquinas virtuais tabém possam urilizar desta conexão caso configuradas de maneira correta conforme este guia. 
 * Segue imagem da topologia da rede na figura 1.
 
-<p><center> Figura 1: Topologia de Rede estrela, com oito VMs com suas NICs em modo BRIDGE</center></p>   
+<p><center> Figura 2: Topologia de Rede estrela, com oito VMs com suas NICs em modo BRIDGE</center></p>   
 <img src="figures/star-network.svg" title="Figura 1: Topologia de Rede Estrela" width="1000" />
 
 # 
@@ -71,6 +76,42 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 -----------------------------------------------------------------------------------------------------
 ```
 -----------------------------------------------------------------------------------------------------
+
+## Instalando o Sistema
+
+### 1. Baixar ISO
+
+* O sistema escolhida para o tutorial foi o Ubuntu Live Server 22.04.1, [clique aqui](https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso?_ga=2.145907636.1635110145.1660307260-2090410815.1656208228) para fazer o download da ISO.
+* Você pode optar por outra versão ou outro sistema, fica a seu criterio, mas fique ciente que algumas configurações podem variar adepender do Sistema operacional.
+
+### 2. Criar Maquina Virtual
+
+* Para criar uma máquina virtual utilizando o virtual box você deve ir em `Ferramentas > Novo`. 
+
+<p><center> Figura 1.1: Criando Máquina virtual, passo 1</center></p>   
+<img src="figures/cirar-vm-1.png" title="Figura 1.1: criando maquina virtual, passo 1" width="1000" />
+
+* Em seguida, você deve: 
+  * Escolher o nome de sua VM, neste tutorial utilazaremos o padrão `VM[n]-PC[x]`, sendo `n` o número da maquina e `x` o número do pc;
+  * Escolher a pasta onde salvar a VM, utilizaremos a pasta `Grupo03`;
+  * Selecionar o sistema operacional, no nosso caso `Linux`;
+  * Selecionar a distribuição do sistema, no nosso caso `Ubuntu (64-bit)`.
+
+<p><center> Figura 1.2: Criando Máquina virtual, passo 2</center></p>   
+<img src="figures/cirar-vm-2.png" title="Figura 1.2: criando maquina virtual, passo 2" width="500" />
+
+* Após isso você selecionar a quantidade de mémoria RAM da máquina, recomendamos pelo menos 1GB, ou 1024MB.
+<p><center> Figura 1.3: Criando Máquina virtual, passo 3</center></p>
+<img src="figures/cirar-vm-3.png" title="Figura 1.3: criando maquina virtual, passo 3" width="500" />
+
+* Após isso você selecionar a quantidade de mémoria RAM da máquina, recomendamos pelo menos 1GB (1024MB).
+
+Figura 1.4: Criando Máquina virtual, passo 3
+
+<img src="figures/cirar-vm-4.png" title="Figura 1.4: criando maquina virtual, passo 4" width="500" />
+
+
+---------------------------------------------------------------------------------------------------------
 
 ## Parte virtual da rede 
 
