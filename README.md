@@ -15,7 +15,10 @@ Repositório destinado as disciplinas técnicas de redes do quarto ano do ensino
 
 # 
 
-### Projeto segundo bimestre
+### Projeto segundo bimestre 
+#### Criando uma rede virtual com Ubuntu server
 - Visualização geral do projeto [aqui](https://github.com/DosonsVitor/prir-projeto/blob/main/projeto-2b/README.md).
 - Tabela com endereçamento IP [aqui](https://github.com/DosonsVitor/prir-projeto/blob/main/projeto-2b/pre-definicoes.md).
 - Roteiro/tutorial [aqui](https://github.com/DosonsVitor/prir-projeto/blob/main/projeto-2b/roteiro.md)
+
+#
