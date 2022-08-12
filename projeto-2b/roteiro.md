@@ -11,10 +11,10 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 2. [Topologia](#2-topologia)
 3. [Endereçamento](#3-endereçamento)
 
-### Instalanado o Sistema
-1. Baixar ISO
-2. Criar Maquina virtual
-3. Importar ISO
+### [Instalando o Sistema](#instalando-o-sistema-1)
+1. [Baixar ISO](#1-baixar-iso)
+2. [Criar Maquina virtual](#2-criar-maquina-virtual)
+3. [Importar ISO](#3-importar-iso)
 4. Instalando o sistema
 
 ### Parte virtual da rede
@@ -104,32 +104,37 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 1.3: Criando Máquina virtual, passo 3</center></p>
 <img src="figures/cirar-vm-3.png" title="Figura 1.3: criando maquina virtual, passo 3" width="500" />
 
-* Após isso você selecionar a quantidade de mémoria RAM da máquina, recomendamos pelo menos 1GB (1024MB).
-
-Figura 1.4: Criando Máquina virtual, passo 3
-
+* Agora você deve selecionar o tipo de criação do seu disco rigido, iremos criar um novo disco do zero.
+<p><center> Figura 1.4: Criando Máquina virtual, passo 4</center></p>
 <img src="figures/cirar-vm-4.png" title="Figura 1.4: criando maquina virtual, passo 4" width="500" />
+
+* Agora você deve selecionar o tipo de arquivo do seu disco rigido, utilizaremos o tipo `VDI (VirtualBox Disk Image`).
+<p><center> Figura 1.5: Criando Máquina virtual, passo 5</center></p>
+<img src="figures/cirar-vm-5.png" title="Figura 1.5: criando maquina virtual, passo 5" width="500" />
+
+* Agora você escolher o tipo de armazenamento no seu disco, vamos usar o tipo `dinamicamente alocado`, nesse tipo de armazenamento o disco irá expandir e ocupar memoria no seu computador somente quando necéssario, ou seja o disco vai aumentando conforme o sistema precise.
+<p><center> Figura 1.6: Criando Máquina virtual, passo 6</center></p>
+<img src="figures/cirar-vm-6.png" title="Figura 1.6: criando maquina virtual, passo 6" width="500" />
+
+* Nessa parte você deve selecionar o local do disco rigido virtual na memoria do seu computador e o tamanho dele, essa parte fica totalmente a seu criterio e no quanto você precisa.
+<p><center> Figura 1.7: Criando Máquina virtual, passo 7</center></p>
+<img src="figures/cirar-vm-7.png" title="Figura 1.7: criando maquina virtual, passo 7" width="500" />
+
+* Feito isso sua máquina virtual já está pronta, mas antes de iniciar ela iremos certificar de que ela tem ao menos 2 cores em seu processador.
+* Para fazer isso acesse a maquina e em seguida vá em configurações, no nosso caso `VM1-PC1 > Configurações`
+
+<p><center> Figura 1.8: Criando Máquina virtual, passo 8</center></p>
+<img src="figures/cirar-vm-8.png" title="Figura 1.8: criando maquina virtual, passo 8" width="1000" />
+
+* Então vá em `Sistema > Processador` e verifique quantos cores estão alocados para a máquina virtual, o minimo aconselhavel são 2.
+<p><center> Figura 1.9: Criando Máquina virtual, passo 9</center></p>
+<img src="figures/cirar-vm-9.png" title="Figura 1.9: criando maquina virtual, passo 9" width="800" />
+
+* Pronto, sua máquina virtual está criada e pronta para a instalação do sistema operacional.
+
+### 3. Importar ISO
 
 
 ---------------------------------------------------------------------------------------------------------
 
 ## Parte virtual da rede 
-
-### Importar arquivos OVA no VirtualBox
-
-* O arquivo .OVA é um formato de exportação de VM utilizado pelo VirtualBox
-* Vamos importar este arquivo para criar todas as VMs que precisamos para criar a nossa rede estrela.
-
-* A Figura 2 Ilustra as configurações para a importação das VMs.
-
-<p><center> Figura 2: Criando uma VM apartir de um arquivo OVA</center></p>   
-   <img src="figures/import-ova1.png" alt="" 
-	title="Figura 2a: Clique em Ferramentas/Importar" width="800" height="auto"/> <br/>
-   <img src="figures/import-ova2.png" alt=""
-	title="Figura 2c: caminho do arquivo" />
-   <img src="figures/import-ova3.png" alt=""
-	title="Figura 2c: configurações de importação" />	
-
-#
-
-### Mudar hostname
