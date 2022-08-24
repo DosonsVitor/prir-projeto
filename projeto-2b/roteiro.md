@@ -17,7 +17,7 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 3. [Importar ISO](#3-importar-iso)
 4. [Instalação do sistema](#4-instalação-do-sistema)
 
-### Parte virtual da rede
+### [Parte virtual da rede](#parte-virtual-da-rede1)
 
 1. Instalar pacotes necessários
 2. Acessar o arquivo netplan
@@ -221,3 +221,14 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 ---------------------------------------------------------------------------------------------------------
 
 ## Parte virtual da rede 
+
+### 1. Instalar pacotes necessários
+
+Para poder dar continuidade na configuração dos servidores e da rede precisamos instalar alguns pacotes necessarios para tudo funcionar corretamente, estes são o openssh-server e o net-tools, como o openssh-server foi instalado durante a instalação do sistema operacional não precisamos voltar a faze-lo novamente.
+
+A instalação do net-tools é simples, basta utilizar o seguinte comando:
+```shell
+sudo apt-get install net-tools
+```
+*Lembre-se que é nécessario que a máquina esteja com uma conexão estabelecida com a internet
+
