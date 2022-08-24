@@ -17,13 +17,13 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 3. [Importar ISO](#3-importar-iso)
 4. [Instalação do sistema](#4-instalação-do-sistema)
 
-### [Parte virtual da rede](#parte-virtual-da-rede1)
+### [Parte virtual da rede](#parte-virtual-da-rede-1)
 
-1. Instalar pacotes necessários
-2. Acessar o arquivo netplan
-3. Editar o arquivo netplan
-4. Mudar adaptador de rede no VirtualBox
-5. Configurar serviço de nomes estático
+1. [Instalar pacotes necessários](#1-instalar-pacotes-necessários)
+2. [Acessar o arquivo netplan](#2-acessar-o-arquivo-netplan)
+3. [Editar o arquivo netplan](#3-editar-o-arquivo-netplan)
+4. [Mudar adaptador de rede no VirtualBox]()
+5. [Configurar serviço de nomes estático]()
 
 ### Parte física da rede
 1. Conectar maquinas
