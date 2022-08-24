@@ -177,6 +177,10 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 * O proximo passo é Configurar proxy, por enquanto deixaremos essa parte em branco e continuaremos com o padrão
 <p><center> Figura 4.7: Instalar SO, passo 6 - Configurar proxy</center></p>
 <img src="figures/instalar-so-7.png" title="Figura 4.7: Instalar SO, passo 7 - Configurar proxy" width="600" />
+
+* 
+<p><center> Figura 4.7: Instalar SO, passo 6 - Configurar proxy</center></p>
+<img src="figures/instalar-so-8.png" title="Figura 4.7: Instalar SO, passo 7 - Configurar proxy" width="600" />
 ---------------------------------------------------------------------------------------------------------
 
 ## Parte virtual da rede 
