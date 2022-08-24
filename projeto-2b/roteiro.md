@@ -156,12 +156,27 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 
 * Em seguida selecione o idioma que você deseja para o servidor
 <p><center> Figura 4.2: Instalar SO, passo 2 - Escolher idioma</center></p>
-<img src="figures/instalar-so-2.png" title="Figura 4.2: Instalar SO, passo 1 - escolher idioma" width="600" />
+<img src="figures/instalar-so-2.png" title="Figura 4.2: Instalar SO, passo 2 - escolher idioma" width="600" />
 
-* Em seguida selecione o idioma que você deseja para o servidor
-<p><center> Figura 4.3: Instalar SO, passo 2 - Escolher idioma</center></p>
-<img src="figures/instalar-so-3.png" title="Figura 4.3: Instalar SO, passo 1 - escolher idioma" width="600" />
+* Caso esteja disponivel uma versão mai atualizada do sistema ele irá avisar na instalação e perguntar se você deseja atualizar, para o nosso caso iremos continuar a instalação a versão desatualizada mesmo.
+<p><center> Figura 4.3: Instalar SO, passo 3 - Escolher versão</center></p>
+<img src="figures/instalar-so-3.png" title="Figura 4.3: Instalar SO, passo 3 - escolher idioma" width="600" />
 
+* Após isso você deve selecionar o layout do teclado da sua máquina para a instalação do sistema, no nosso caso iremos utilizar o layout `Portuguese (Brazil)`
+<p><center> Figura 4.4: Instalar SO, passo 4 - Escolher layout de teclado</center></p>
+<img src="figures/instalar-so-4.png" title="Figura 4.4: Instalar SO, passo 4 - escolher layout de teclado" width="600" />
+
+* Agora você precisa escolher o tipo do seu servidor, para essa prática utilizaremos o tipo `Ubuntu Server` (padrão)
+<p><center> Figura 4.5: Instalar SO, passo 5 - Escolher tipo de servidor</center></p>
+<img src="figures/instalar-so-5.png" title="Figura 4.5: Instalar SO, passo 5 - escolher tipo de servidor" width="600" />
+
+* Na proxima parte vc deve configurar as Ligações de rede, por enquanto pode deixar o padrão e continuar
+<p><center> Figura 4.6: Instalar SO, passo 6 - Configurar Ligações de rede</center></p>
+<img src="figures/instalar-so-6.png" title="Figura 4.6: Instalar SO, passo 6 - Configurar Ligações de rede" width="600" />
+
+* 
+<p><center> Figura 4.7: Instalar SO, passo 6 - Configurar Ligações de rede</center></p>
+<img src="figures/instalar-so-7.png" title="Figura 4.7: Instalar SO, passo 7 - Configurar Ligações de rede" width="600" />
 ---------------------------------------------------------------------------------------------------------
 
 ## Parte virtual da rede 
