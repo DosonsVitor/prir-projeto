@@ -178,9 +178,46 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 4.7: Instalar SO, passo 6 - Configurar proxy</center></p>
 <img src="figures/instalar-so-7.png" title="Figura 4.7: Instalar SO, passo 7 - Configurar proxy" width="600" />
 
-* 
-<p><center> Figura 4.7: Instalar SO, passo 6 - Configurar proxy</center></p>
-<img src="figures/instalar-so-8.png" title="Figura 4.7: Instalar SO, passo 7 - Configurar proxy" width="600" />
+* Na tela seguinte ele irá pedir o endereço do espelho de arquivo, recomendamos deixar o padrão e continuar
+<p><center> Figura 4.8: Instalar SO, passo 8 - Espelho de arquivo</center></p>
+<img src="figures/instalar-so-8.png" title="Figura 4.8: Instalar SO, passo 8 - Espelho de arquivo" width="600" />
+
+* O proximo passo é configurar o armazenamento do sistema, recomendamos também permanecer no padrão recomendado
+<p><center> Figura 4.9: Instalar SO, passo 9 - Configurar armazenamento</center></p>
+<img src="figures/instalar-so-9.png" title="Figura 4.9: Instalar SO, passo 9 - Configurar armazenamento" width="600" />
+
+* Ainda nas configurações de armazenamento irá aparecer outra página para a configuração de partições, apenas mantenha o padrão e continue
+<p><center> Figura 4.10: Instalar SO, passo 10 - Configurar armazenamento parte 2 </center></p>
+<img src="figures/instalar-so-10.png" title="Figura 4.10: Instalar SO, passo 10 - Configurar armazenamento parte 2" width="600" />
+
+* Quando aparecer uma mensagem de aviso alertando que está pé uma operação perigosa, apenas clique em continuar (isso ira formatar o disco selecionado, como estamos instalando um so em um novo disco rigido virtual vazio isso não fara diferença)
+<p><center> Figura 4.11 Instalar SO, passo 11 - Configurar armazenamento parte 3</center></p>
+<img src="figures/instalar-so-11.png" title="Figura 4.11: Instalar SO, passo 11 - Configurar armazenamento parte 3" width="600" />
+
+* A próxima parte da instalação consiste na definição do perfil tanto do úsuario principal quanto do servidor, nessa parte você deve colocar as informações desejadas, na nossa prática iremos utilizar: `nome: administrador`, `hostname: srv-vm1-pc1`, `usuario: administrador`, `senha: adminifal`
+<p><center> Figura 4.12 Instalar SO, passo 12 - Definir perfil</center></p>
+<img src="figures/instalar-so-12.png" title="Figura 4.12: Instalar SO, passo 12 - Definir perfil" width="600" />
+
+* Agora chegou uma das partes principais, nessa parte você deve instalar o openssh-server, caso está opção não esteja selecionada marque-a e clique em continuar
+<p><center> Figura 4.13 Instalar SO, passo 13 - Instalar SSH server</center></p>
+<img src="figures/instalar-so-13.png" title="Figura 4.13: Instalar SO, passo 13 - Instalar SSH server" width="600" />
+
+* Na proxima tela ele irá mostrar as opções de drivers de terceiros disponiveis ou necessarios, no nosso caso não selecionamos nenhum
+<p><center> Figura 4.14 Instalar SO, passo 14 - Drivers de terceiros</center></p>
+<img src="figures/instalar-so-14.png" title="Figura 4.14: Instalar SO, passo 14 - Drivers de terceiros" width="600" />
+
+* Antes da conslusão da instalação ele mostrará um conjuntop de snaps (pacotes de ferramentas) comuns entre os usúarios de servidores ubuntu, caso precise ou queira utilizar algum dele você já pode selecionar agora. No nosso caso não iremos utilizar nenhum deles (Caso venha precisar em algum momento e não o selecionou aqui não se preocupe, você poderá instalar qualquer um desses a qualquer momento no seu servidor)
+<p><center> Figura 4.15 Instalar SO, passo 15 - Instalar snaps</center></p>
+<img src="figures/instalar-so-15.png" title="Figura 4.15: Instalar SO, passo 15 - Instalar snaps" width="600" />
+
+* Agora aguarde a instalação do sistema, quando o processo for finalizado e aparecerem as opções vá em `Cancel update and reboot` 
+<p><center> Figura 4.16 Instalar SO, passo 16 - Conclusão</center></p>
+<img src="figures/instalar-so-16.png" title="Figura 4.16: Instalar SO, passo 16 - Conclusão" width="600" />
+
+* Pronto, sistema opéracional instalado e funcionando, agora você só precisa digitar seu user e sua senha para fazer login.
+<p><center> Figura 4.17 Instalar SO, passo 17 - Login</center></p>
+<img src="figures/instalar-so-17.png" title="Figura 4.17: Instalar SO, passo 17 - Login" width="600" />
+
 ---------------------------------------------------------------------------------------------------------
 
 ## Parte virtual da rede 
