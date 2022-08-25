@@ -320,3 +320,48 @@ To                     Action     From
 
 ### 4. Configurar serviço de nomes estáticos
 
+Para configurar os nomes estáticos de todas as VMs na rede, acesse o arquivo de hosts
+```shell
+sudo nano /etc/hosts
+```
+
+E agora, utilizando a tabela de definições de endereços IPs da Rede e Nomes de Hosts (Tabela 2), edite o arquivo de hosts
+
+```
+Tabela 2: Definições de endereços IPs da Rede e Nomes de Hosts
+-----------------------------------------------------------------------------------------------------
+|  DESCRICAO  |  IP             |   hostname        |               FQDN               |   aliase   |
+-----------------------------------------------------------------------------------------------------
+| VM1-PC1     | 192.168.24.33   |   srv-vm1-pc1     | dosons1.grupo3-924.ifalara.net   |   dosons   |
+| VM2-PC1     | 192.168.24.34   |   srv-vm2-pc1     | dosons2.grupo3-924.ifalara.net   |   vitor    |
+| VM1-PC2     | 192.168.24.35   |   srv-vm1-pc2     | clara1.grupo3-924.ifalara.net    |   clara    |
+| VM2-PC2     | 192.168.24.36   |   srv-vm2-pc2     | clara2.grupo3-924.ifalara.net    |   cortez   |
+| VM1-PC3     | 192.168.24.37   |   srv-vm1-pc3     | julia1.grupo3-924.ifalara.net    |   julia    |
+| VM2-PC3     | 192.168.24.38   |   srv-vm2-pc3     | julia2.grupo3-924.ifalara.net    |   daniela  |
+| VM1-PC4     | 192.168.24.39   |   srv-vm1-pc4     | veronica1.grupo3-924.ifalara.net |   veronica |
+| VM2-PC4     | 192.168.24.40   |   srv-vm2-pc4     | veronica2.grupo3-924.ifalara.net |   nunes    |
+-----------------------------------------------------------------------------------------------------
+```
+
+Exemplo de arquivo de hosts como deve ficar:
+
+```shell
+127.0.0.1 localhost
+127.0.1.1 srv-vm1-pc1
+
+192.168.24.33 srv-vm1-pc1 dosons1.grupo3-924.ifalara.net dosons
+192.168.24.34 srv-vm2-pc1 dosons2.grupo3-924.ifalara.net vitor
+192.168.24.35 srv-vm1-pc2 clara1.grupo3-924.ifalara.net clara
+192.168.24.36 srv-vm2-pc2 clara2.grupo3-924.ifalara.net cortez
+192.168.24.37 srv-vm1-pc3 julia1.grupo3-924.ifalara.net julia
+192.168.24.38 srv-vm2-pc3 julia2.grupo3-924.ifalara.net daniela
+192.168.24.39 srv-vm1-pc4 veronica1.grupo3-924.ifalara.net veronica
+192.168.24.40 srv-vm2-pc4 veronica2.grupo3-924.ifalara.net nunes
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allroutes
+```
