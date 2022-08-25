@@ -22,8 +22,8 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 1. [Instalar pacotes necessários](#1-instalar-pacotes-necessários)
 2. [Configurar endereço IP e máscara da rede](#2-configurar-endereço-ip-e-máscara-da-rede)
 3. [Configurar e habilitar ssh e firewall]()
-4. [Mudar adaptador de rede no VirtualBox]()
-5. [Configurar serviço de nomes estático]()
+4. [Configurar serviço de nomes estáticos]()
+5. [Mudar adaptador de rede no VirtualBox]()
 
 ### Parte física da rede
 1. Conectar maquinas
@@ -317,4 +317,6 @@ To                     Action     From
 22/tcp                 ALLOW      Anywhere
 22/tcp (v6)            ALLOW      Anywhere (v6)
 ```
+
+### 4. Configurar serviço de nomes estáticos
 
