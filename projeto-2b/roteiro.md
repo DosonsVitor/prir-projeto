@@ -20,10 +20,9 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 ### [Parte virtual da rede](#parte-virtual-da-rede-1)
 
 1. [Instalar pacotes necessários](#1-instalar-pacotes-necessários)
-2. [Acessar o arquivo netplan](#2-acessar-o-arquivo-netplan)
-3. [Editar o arquivo netplan](#3-editar-o-arquivo-netplan)
-4. [Mudar adaptador de rede no VirtualBox]()
-5. [Configurar serviço de nomes estático]()
+2. [Configurar endereço IP e máscara da rede](#2-configurar-endereço-ip-e-máscara-da-rede)
+3. [Mudar adaptador de rede no VirtualBox]()
+4. [Configurar serviço de nomes estático]()
 
 ### Parte física da rede
 1. Conectar maquinas
@@ -230,5 +229,62 @@ A instalação do net-tools é simples, basta utilizar o seguinte comando:
 ```shell
 sudo apt-get install net-tools
 ```
-*Lembre-se que é nécessario que a máquina esteja com uma conexão estabelecida com a internet
+>*Lembre-se que é nécessario que a máquina esteja com uma conexão estabelecida com a internet
 
+### 2. Configurar endereço IP e máscara da rede
+
+Para fazer a alteração do endereço ip da sua máquina e da mascara de rede você precisa acessar o arquivo do netplan utilizando o editor nano e então mudar algumas predefinições das configurações de rede, para isso utilize o comando nano com o caminho do arquivo do netplan, para descobrir o nome do arquivo utilize o comando:
+
+```shell
+sudo ls /etc/netplan
+```
+
+No nosso caso a saida foi:
+
+```shell
+00-installer-config.yaml
+```
+
+Então, em seguida, utilizamos o seguinte comando para acessar o arquivo com o editor nano:
+
+```shell
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+
+O conteúdo do arquivo será o seguinte:
+
+```shell
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0os3:
+      dhcp4: true
+  version: 2
+```
+
+Para a nossa pratica funcionar e você conseguir mudar o ip e a mascara de rede com exito, você deve inserir os campos `addresses` e `gateway4` dentro de `enp0s3`, além de trocar o `dhcp4` para false, de forma que o arquivo final seja:
+
+```shell
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0os3:
+      addresses: [192.168.24.33/28]
+      gateway4: 192.168.24.33
+      dhcp4: false
+  version: 2
+```
+
+O gateway deve ser o mesmo em todas as máquinas da redes, nesse caso utilizaremos o 192.168.24.33 por ser o primeiro endereço ip disponivel para o nosso grupo, lembrando que todas as outras máquinas da nossa redes seguira a partir do 192.168.24.33 até o 192.168.24.40.
+>*Lembre-se que toda a identação do arquivo do netplan deve ser feita utilizando espaços, caso seja feito com deve isso acarretara em erros na hora da execução.
+
+Com o arquivo pronto utilize Control+O para salvar e depois Control+X para sair
+
+Em seguida utilize em sequencia os comandos abaixo para aplicar as configurações e mostrar elas na tela:
+
+```shell
+sudo netplan apply
+ifconfig -a
+```
+
+Pronto, seu IP está devidamente configurado.
