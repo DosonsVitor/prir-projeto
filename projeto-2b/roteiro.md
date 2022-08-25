@@ -21,8 +21,9 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 1. [Instalar pacotes necessários](#1-instalar-pacotes-necessários)
 2. [Configurar endereço IP e máscara da rede](#2-configurar-endereço-ip-e-máscara-da-rede)
-3. [Mudar adaptador de rede no VirtualBox]()
-4. [Configurar serviço de nomes estático]()
+3. [Configurar e habilitar ssh e firewall]()
+4. [Mudar adaptador de rede no VirtualBox]()
+5. [Configurar serviço de nomes estático]()
 
 ### Parte física da rede
 1. Conectar maquinas
@@ -288,3 +289,32 @@ ifconfig -a
 ```
 
 Pronto, seu IP está devidamente configurado.
+
+
+### 3. Configurar e habilitar ssh e firewall
+
+O servirdor SSH foi instalado previamente no nosso sistema, então basta utilizar o comando:
+```shell
+systemctl status ssh
+```
+Para verificar se está tudo ok, e então dar continuidade a pratica.
+
+O próximo passo é configurar o firewall para permitir conexões remota via protocolo SSH, para fazer isso execute os comandos abaixo:
+```shell
+sudo ufw allow ssh
+sudo ufw enable
+```
+
+Pronto, caso queira verificar que tudo está correto utilize o comando: 
+```shell
+sudo ufw status
+```
+Para verificar o status do firewall, se tudo estiver corrido corretamente a saida será a seguinte:
+```shell
+Status: active
+To                     Action     From
+--                     ------     ----
+22/tcp                 ALLOW      Anywhere
+22/tcp (v6)            ALLOW      Anywhere (v6)
+```
+
