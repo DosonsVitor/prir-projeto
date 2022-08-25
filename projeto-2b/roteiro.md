@@ -83,7 +83,7 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 ### 1. Baixar ISO
 
 * O sistema escolhida para o tutorial foi o Ubuntu Live Server 22.04.1, [clique aqui](https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso?_ga=2.145907636.1635110145.1660307260-2090410815.1656208228) para fazer o download da ISO.
-* Você pode optar por outra versão ou outro sistema, fica a seu criterio, mas fique ciente que algumas configurações podem variar adepender do Sistema operacional.
+* Você pode optar por outra versão ou outro sistema, fica a seu critério, mas fique ciente que algumas configurações podem variar adepender do Sistema operacional.
 
 #
 
@@ -103,7 +103,7 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 2.2: Criando Máquina virtual, passo 2</center></p>   
 <img src="figures/cirar-vm-2.png" title="Figura 2.2: criando maquina virtual, passo 2" width="500" />
 
-* Após isso você selecionar a quantidade de mémoria RAM da máquina, recomendamos pelo menos 1GB, ou 1024MB.
+* Após isso você deve selecionar a quantidade de mémoria RAM da máquina, recomendamos pelo menos 1GB, ou 1024MB.
 <p><center> Figura 2.3: Criando Máquina virtual, passo 3</center></p>
 <img src="figures/cirar-vm-3.png" title="Figura 2.3: criando maquina virtual, passo 3" width="500" />
 
@@ -407,3 +407,27 @@ Agora, em vonfigurações de rede, clique no campo `Conectado a:` e escolha a op
 
 <p><center> Figura 5.3: ALterando configurações de adaptadores, passo 3</center></p>   
 <img src="figures/config-virtualbox-3.png" title="Figura 5.1: ALterando configurações de adaptadores, passo 3" width="800" />
+
+---------------------------------------------------------------------------------------------------------
+
+## Parte fisica da rede
+
+### 1. Conectar maquinas
+
+Para finalizar a rede e então poder ter acesso a todas as máquinas criadas você precisara conectar todos os computadores com um cabo ethernet (figura 6.1 e figura 6.2).
+
+<p><center> Figura 6.1: Cabo ethernet</center></p>   
+<img src="figures/cabo-ethernet.png" title="Figura 6.1: Cabo ethernet" width="800" />
+
+<p><center> Figura 6.2: Cabo conectado a o computador</center></p>   
+<img src="figures/cabo-pc.png" title="Figura 6.2: Caboconectado ao computador" width="800" />
+
+Após isso, utilize um swift para fazer a conexão de todos os cabos conectados a computadores na rede, na nossa prática utilizaremos um swift de 8 portas (figura 6.3 e figura 6.4)
+
+<p><center> Figura 6.3: Swift de 8 portas</center></p>   
+<img src="figures/swift.png" title="Figura 6.3: Swift de 8 portas" width="800" />
+
+<p><center> Figura 6.4: Cabos conectados a o swift</center></p>   
+<img src="figures/cabos-swift.png" title="Figura 6.4: Cabos conectados a o swift" width="800" />
+
+---------------------------------------------------------------------------------------------------------
