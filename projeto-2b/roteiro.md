@@ -26,10 +26,14 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 5. [Criar novos usuarios](#5-criar-novos-usuarios)
 6. [Mudar adaptador de rede no VirtualBox](#6-mudar-adaptador-de-rede-no-virtualbox)
 
-### Parte física da rede
+### [Parte física da rede](#parte-fisica-da-rede)
+
 1. Conectar maquinas
 
-### Possíveis erros
+### Testes da rede
+
+1. Ping
+2. SSH
 
 ----------------------------------------------------------------------------------------------------
 
@@ -431,3 +435,39 @@ Após isso, utilize um swift para fazer a conexão de todos os cabos conectados 
 <img src="figures/cabos-swift.png" title="Figura 6.4: Cabos conectados a o swift" width="800" />
 
 ---------------------------------------------------------------------------------------------------------
+
+## Testes da rede
+
+### 1. Ping
+
+```
+---------------------------------------------------------------------------
+| A partir de | Para    | Modo     | Endereço                             |    
+---------------------------------------------------------------------------
+| VM1-PC1     | VM1-PC3 | IP       | 192.168.24.37                        |
+| VM2-PC1     | VM2-PC2 | aliese   | cortez                               |                     
+| VM1-PC2     | VM1-PC4 | FQDN     | veronica1.grupo3-924.ifalara.net     |
+| VM2-PC2     | VM1-PC1 | hostname | srv-vm1-pc1                          | 
+| VM1-PC3     | VM1-PC2 | IP       | 192.168.24.35                        |  
+| VM2-PC3     | VM2-PC4 | aliese   | nunes                                |
+| VM1-PC4     | VM2-PC1 | FQDN     | dosons2.grupo3-924.ifalara.net       |  
+| VM2-PC4     | VM2-PC3 | hostname | srv-vm2-pc3                          |
+---------------------------------------------------------------------------
+```
+
+### 2. SSH
+
+```
+--------------------------------------------------------------------------------------
+| A partir de | Para    | Modo     | Endereço                             | Usuário  | 
+--------------------------------------------------------------------------------------
+| VM1-PC1     | VM1-PC3 | IP       | 192.168.24.37                        | julia    |
+| VM2-PC1     | VM2-PC2 | aliese   | cortez                               | veronica |                    
+| VM1-PC2     | VM1-PC4 | FQDN     | veronica1.grupo3-924.ifalara.net     | dosons   |
+| VM2-PC2     | VM1-PC1 | hostname | srv-vm1-pc1                          | veronica |
+| VM1-PC3     | VM1-PC2 | IP       | 192.168.24.35                        | clara    |
+| VM2-PC3     | VM2-PC4 | aliese   | nunes                                | julia    |
+| VM1-PC4     | VM2-PC1 | FQDN     | dosons2.grupo3-924.ifalara.net       | clara    |
+| VM2-PC4     | VM2-PC3 | hostname | srv-vm2-pc3                          | dosons   |
+--------------------------------------------------------------------------------------
+```
