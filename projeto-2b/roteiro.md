@@ -21,10 +21,10 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 1. [Instalar pacotes necessários](#1-instalar-pacotes-necessários)
 2. [Configurar endereço IP e máscara da rede](#2-configurar-endereço-ip-e-máscara-da-rede)
-3. [Configurar e habilitar ssh e firewall]()
-4. [Configurar serviço de nomes estáticos]()
-5. [Criar novos usuarios]()
-6. [Mudar adaptador de rede no VirtualBox]()
+3. [Configurar e habilitar ssh e firewall](#3-configurar-e-habilitar-ssh-e-firewall)
+4. [Configurar serviço de nomes estáticos](#4-configurar-serviço-de-nomes-estáticos)
+5. [Criar novos usuarios](#5-criar-novos-usuarios)
+6. [Mudar adaptador de rede no VirtualBox](#6-mudar-adaptador-de-rede-no-virtualbox)
 
 ### Parte física da rede
 1. Conectar maquinas
@@ -370,3 +370,40 @@ ff02::2 ip6-allroutes
 
 ### 5. Criar novos usuarios
 
+O próximo passo da prática é realizar a criação de 4 novos usuarios no servidor, para isso usaremos as informações de todos os integrantes do grupo como consta a tabela 3.
+
+```
+Tabela 3: Novos usuarios
+-----------------------------------------------------------------
+|  USUARIO  |            NOME COMPLETO            | ROOM NUMBER |
+-----------------------------------------------------------------
+| dosons    | Dosons de Oliveira Vitor            | 924         |
+| julia     | Julia Daniela Rocha de Oliveira     | 924         |
+| clara     | Maria Clara Cortez Cavalcante Rocha | 924         |
+| veronica  | Maria Veronica Nunes da Silva       | 924         |
+-----------------------------------------------------------------
+```
+
+Para criar os usuarios utilize o comando:
+```shell
+sudo adduser <usuario>
+```
+
+Repita o processo para todos os usuarios desejados em todos os servidores da rede.
+
+### 6. Mudar adaptador de rede no VirtualBox
+
+Agora, para finalizar a parte virtual da sua rede de servidores ubuntu, você precisa desligar a sua maquina (pode fazer isso utilizando a opção de fechar aba do virtual box ou com o comando `sudo poweroff`), e em seguida ir nas configurações da sua VM. Para fazer isso acesse a tela inicial do VirtualBox e vá na sua máquina>configurações, como mostra a figura 5.1
+
+<p><center> Figura 5.1: ALterando configurações de adaptadores, passo 1</center></p>   
+<img src="figures/config-virtualbox-1.png" title="Figura 5.1: ALterando configurações de adaptadores, passo 1" width="1000" />
+
+Após isso, vá nas opções de rede
+
+<p><center> Figura 5.2: ALterando configurações de adaptadores, passo 2</center></p>   
+<img src="figures/config-virtualbox-2.png" title="Figura 5.2: ALterando configurações de adaptadores, passo 2" width="800" />
+
+Agora, em vonfigurações de rede, clique no campo `Conectado a:` e escolha a opção `Placa em modo Bridge` e clique em ok.
+
+<p><center> Figura 5.3: ALterando configurações de adaptadores, passo 3</center></p>   
+<img src="figures/config-virtualbox-3.png" title="Figura 5.1: ALterando configurações de adaptadores, passo 3" width="800" />
