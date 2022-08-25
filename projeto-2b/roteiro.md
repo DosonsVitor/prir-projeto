@@ -23,7 +23,8 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 2. [Configurar endereço IP e máscara da rede](#2-configurar-endereço-ip-e-máscara-da-rede)
 3. [Configurar e habilitar ssh e firewall]()
 4. [Configurar serviço de nomes estáticos]()
-5. [Mudar adaptador de rede no VirtualBox]()
+5. [Criar novos usuarios]()
+6. [Mudar adaptador de rede no VirtualBox]()
 
 ### Parte física da rede
 1. Conectar maquinas
@@ -365,3 +366,7 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allroutes
 ```
+
+
+### 5. Criar novos usuarios
+
