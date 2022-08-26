@@ -434,9 +434,13 @@ Após isso, utilize um switch para fazer a conexão de todos os cabos conectados
 <p><center> Figura 6.4: Cabos conectados a o switch</center></p>   
 <img src="figures/cabos-switch.png" title="Figura 6.4: Cabos conectados a o switch" width="800" />
 
+Pronto, sua rede está concluida e funcionando!!!
+
 ---------------------------------------------------------------------------------------------------------
 
 ## Testes da rede
+
+Agora que todos os passos foram realizados corretamente o último passo é fazer testes para verificar se tudo está ocorrendo de forma certa, para isso utilize as tabelas a seguir para verificar as máquinas e as formas de acessar elas.
 
 ### 1. Ping
 
@@ -454,6 +458,12 @@ Após isso, utilize um switch para fazer a conexão de todos os cabos conectados
 | VM2-PC4     | VM2-PC3 | hostname | srv-vm2-pc3                          |
 ---------------------------------------------------------------------------
 ```
+
+#### Resultados:
+
+<p><center> Figura 7.1: Ping da VM1 do PC1 para a VM1 do PC3 utilizando o endereço IP</center></p>   
+<img src="figures/resultados/ping-1.png" title=" Figura 7.1: Ping da VM1 do PC1 para a VM1 do PC3 utilizando o endereço IP" width="500" />
+
 
 ### 2. SSH
 
