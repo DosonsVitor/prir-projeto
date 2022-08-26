@@ -479,6 +479,12 @@ Agora que todos os passos foram realizados corretamente o último passo é fazer
 <p><center> Figura 7.6: Ping da VM2 do PC3 para a VM2 do PC4 utilizando a aliase</center></p>   
 <img src="figures/resultados/ping-6.png" title="Figura 7.6: Ping da VM2 do PC3 para a VM2 do PC4 utilizando a aliase" width="800" />
 
+<p><center> Figura 7.7: Ping da VM1 do PC4 para a VM2 do PC1 utilizando o FQDN</center></p>   
+<img src="figures/resultados/ping-7.png" title="Figura 7.7: Ping da VM1 do PC4 para a VM2 do PC1 utilizando o FQDN" width="800" />
+
+<p><center> Figura 7.8: Ping da VM2 do PC4 para a VM2 do PC3 utilizando o hostname</center></p>   
+<img src="figures/resultados/ping-8.png" title="Figura 7.8: Ping da VM2 do PC4 para a VM2 do PC3 utilizando o hostname" width="800" />
+
 
 ### 2. SSH
 
