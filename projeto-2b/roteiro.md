@@ -28,12 +28,12 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 ### [Parte física da rede](#parte-fisica-da-rede)
 
-1. Conectar maquinas
+1. [Conectar maquinas](#1-conectar-maquinas)
 
-### Testes da rede
+### [Testes da rede](#testes-da-rede-1)
 
-1. Ping
-2. SSH
+1. [Ping](#1-ping)
+2. [SSH](#2-ssh)
 
 ----------------------------------------------------------------------------------------------------
 
@@ -426,13 +426,13 @@ Para finalizar a rede e então poder ter acesso a todas as máquinas criadas voc
 <p><center> Figura 6.2: Cabo conectado a o computador</center></p>   
 <img src="figures/cabo-pc.png" title="Figura 6.2: Caboconectado ao computador" width="800" />
 
-Após isso, utilize um swift para fazer a conexão de todos os cabos conectados a computadores na rede, na nossa prática utilizaremos um swift de 8 portas (figura 6.3 e figura 6.4)
+Após isso, utilize um switch para fazer a conexão de todos os cabos conectados a computadores na rede, na nossa prática utilizaremos um switch de 8 portas (figura 6.3 e figura 6.4)
 
-<p><center> Figura 6.3: Swift de 8 portas</center></p>   
-<img src="figures/swift.png" title="Figura 6.3: Swift de 8 portas" width="800" />
+<p><center> Figura 6.3: Switch de 8 portas</center></p>   
+<img src="figures/switch.png" title="Figura 6.3: Switch de 8 portas" width="800" />
 
-<p><center> Figura 6.4: Cabos conectados a o swift</center></p>   
-<img src="figures/cabos-swift.png" title="Figura 6.4: Cabos conectados a o swift" width="800" />
+<p><center> Figura 6.4: Cabos conectados a o switch</center></p>   
+<img src="figures/cabos-switch.png" title="Figura 6.4: Cabos conectados a o switch" width="800" />
 
 ---------------------------------------------------------------------------------------------------------
 
