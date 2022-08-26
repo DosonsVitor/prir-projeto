@@ -505,6 +505,26 @@ Agora que todos os passos foram realizados corretamente o último passo é fazer
 
 #### Resultados:
 
-<p><center> Figura 8.1: Acesso usuario julia na  VM1 do PC3 via ssh a partir da VM1 do PC1 utilizando o endereço IP</center></p>   
+<p><center> Figura 8.1: Acesso ao usuario julia na  VM1 do PC3 via ssh a partir da VM1 do PC1 utilizando o endereço IP</center></p>   
 <img src="figures/resultados/ssh-1.png" title="Figura 8.1: Acesso usuario julia na  VM1 do PC3 via ssh a partir da VM1 do PC1 utilizando o endereço IP" width="800" />
 
+<p><center> Figura 8.2: Acesso ao usuario veronica na VM2 do PC2 via ssh a partir da VM2 do PC1 utilizando a aliase</center></p>   
+<img src="figures/resultados/ssh-2.png" title="Figura 8.2: Acesso usuario veronica na VM2 do PC2 via ssh a partir da VM2 do PC1 utilizando a aliase" width="800" />
+
+<p><center> Figura 8.3: Acesso ao usuario dosons na VM1 do PC4 via ssh a partir da VM1 do PC2 utilizando o FQDN</center></p>   
+<img src="figures/resultados/ssh-3.png" title="Figura 8.3: Acesso ao usuario dosons na VM1 do PC4 via ssh a partir da VM1 do PC2 utilizando o FQDN" width="800" />
+
+<p><center> Figura 8.4: Acesso ao usuario veronica na VM1 do PC1 via ssh a partir da VM2 do PC2 utilizando o hostname</center></p>   
+<img src="figures/resultados/ssh-4.png" title="Figura 8.4: Acesso ao usuario veronica na VM1 do PC1 via ssh a partir da VM2 do PC2 utilizando o hostname" width="800" />
+
+<p><center> Figura 8.5: Acesso ao usuario clara na  VM1 do PC2 via ssh a partir da VM1 do PC3 utilizando o endereço IP</center></p>   
+<img src="figures/resultados/ssh-5.png" title="Figura 8.5: Acesso ao usuario clara na  VM1 do PC2 via ssh a partir da VM1 do PC3 utilizando o endereço IP" width="800" />
+
+<p><center> Figura 8.6: Acesso ao usuario julia na VM2 do PC4 via ssh a partir da VM2 do PC3 utilizando a aliase</center></p>   
+<img src="figures/resultados/ssh-6.png" title="Figura 8.6: Acesso ao usuario julia na VM2 do PC4 via ssh a partir da VM2 do PC3 utilizando a aliase" width="800" />
+
+<p><center> Figura 8.7: Acesso ao usuario clara na VM2 do PC2 via ssh a partir da VM1 do PC4 utilizando o FQDN</center></p>   
+<img src="figures/resultados/ssh-7.png" title="Figura 8.7: Acesso ao usuario clara na VM2 do PC2 via ssh a partir da VM1 do PC4 utilizando o FQDN" width="800" />
+
+<p><center> Figura 8.8: Acesso ao usuario dosons na VM2 do PC3 via ssh a partir da VM2 do PC4 utilizando o hostname</center></p>   
+<img src="figures/resultados/ssh-8.png" title="Figura 8.8: Acesso ao usuario dosons na VM2 do PC3 via ssh a partir da VM2 do PC4 utilizando o hostname" width="800" />
