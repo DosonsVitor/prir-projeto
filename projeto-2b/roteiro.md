@@ -48,7 +48,7 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 ### 2. Topologia
 
-* A topologia utilizada na rede é do tipo estrela, nessa topologia os computadores são todos conectados a um hub (switch) central que atua conectando todas as máquinas. O hub gerencia a transmissão de dados pela rede. Ou seja, qualquer dado enviado pela rede viaja pelo hub central antes de terminar em seu destino uqe pode ser qualquer uma das máquinas conectadas ao mesmo.
+* A topologia utilizada na rede é do tipo estrela, nessa topologia os computadores são todos conectados a um hub (switch) central que atua conectando todas as máquinas. O hub gerencia a transmissão de dados pela rede. Ou seja, qualquer dado enviado pela rede viaja pelo hub central antes de terminar em seu destino que pode ser qualquer uma das máquinas conectadas ao mesmo.
 * Na nossa rede todos os 4 PCs utilizados precisam estar conectados a um switch, fazendo com que as máquinas virtuais tabém possam urilizar desta conexão caso configuradas de maneira correta conforme este guia. 
 * Segue imagem da topologia da rede na figura 1.
 
@@ -163,7 +163,7 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 4.2: Instalar SO, passo 2 - Escolher idioma</center></p>
 <img src="figures/instalar-so-2.png" title="Figura 4.2: Instalar SO, passo 2 - escolher idioma" width="600" />
 
-* Caso esteja disponivel uma versão mai atualizada do sistema ele irá avisar na instalação e perguntar se você deseja atualizar, para o nosso caso iremos continuar a instalação a versão desatualizada mesmo.
+* Caso esteja disponivel uma versão mais atualizada do sistema ele irá avisar na instalação e perguntar se você deseja atualizar, para o nosso caso iremos continuar a instalação da versão desatualizada mesmo.
 <p><center> Figura 4.3: Instalar SO, passo 3 - Escolher versão</center></p>
 <img src="figures/instalar-so-3.png" title="Figura 4.3: Instalar SO, passo 3 - escolher idioma" width="600" />
 
@@ -195,7 +195,7 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 4.10: Instalar SO, passo 10 - Configurar armazenamento parte 2 </center></p>
 <img src="figures/instalar-so-10.png" title="Figura 4.10: Instalar SO, passo 10 - Configurar armazenamento parte 2" width="600" />
 
-* Quando aparecer uma mensagem de aviso alertando que está pé uma operação perigosa, apenas clique em continuar (isso ira formatar o disco selecionado, como estamos instalando um so em um novo disco rigido virtual vazio isso não fara diferença)
+* Quando aparecer uma mensagem de aviso alertando que esta é uma operação perigosa, apenas clique em continuar (isso ira formatar o disco selecionado, como estamos instalando um SO em um novo disco rigido virtual vazio isso não fará diferença)
 <p><center> Figura 4.11 Instalar SO, passo 11 - Configurar armazenamento parte 3</center></p>
 <img src="figures/instalar-so-11.png" title="Figura 4.11: Instalar SO, passo 11 - Configurar armazenamento parte 3" width="600" />
 
@@ -203,7 +203,7 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 4.12 Instalar SO, passo 12 - Definir perfil</center></p>
 <img src="figures/instalar-so-12.png" title="Figura 4.12: Instalar SO, passo 12 - Definir perfil" width="600" />
 
-* Agora chegou uma das partes principais, nessa parte você deve instalar o openssh-server, caso está opção não esteja selecionada marque-a e clique em continuar
+* Agora chegou uma das partes principais, nessa parte você deve instalar o openssh-server, caso esta opção não esteja selecionada marque-a e clique em continuar
 <p><center> Figura 4.13 Instalar SO, passo 13 - Instalar SSH server</center></p>
 <img src="figures/instalar-so-13.png" title="Figura 4.13: Instalar SO, passo 13 - Instalar SSH server" width="600" />
 
@@ -211,7 +211,7 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 <p><center> Figura 4.14 Instalar SO, passo 14 - Drivers de terceiros</center></p>
 <img src="figures/instalar-so-14.png" title="Figura 4.14: Instalar SO, passo 14 - Drivers de terceiros" width="600" />
 
-* Antes da conslusão da instalação ele mostrará um conjuntop de snaps (pacotes de ferramentas) comuns entre os usúarios de servidores ubuntu, caso precise ou queira utilizar algum dele você já pode selecionar agora. No nosso caso não iremos utilizar nenhum deles (Caso venha precisar em algum momento e não o selecionou aqui não se preocupe, você poderá instalar qualquer um desses a qualquer momento no seu servidor)
+* Antes da conslusão da instalação ele mostrará um conjunto de snaps (pacotes de ferramentas) comuns entre os usúarios de servidores ubuntu, caso precise ou queira utilizar algum dele você já pode selecionar agora. No nosso caso não iremos utilizar nenhum deles (Caso venha precisar em algum momento e não o selecionou aqui não se preocupe, você poderá instalar qualquer um desses a qualquer momento no seu servidor)
 <p><center> Figura 4.15 Instalar SO, passo 15 - Instalar snaps</center></p>
 <img src="figures/instalar-so-15.png" title="Figura 4.15: Instalar SO, passo 15 - Instalar snaps" width="600" />
 
