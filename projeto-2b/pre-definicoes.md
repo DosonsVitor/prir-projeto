@@ -20,6 +20,9 @@ Tabela 2: Definições de endereços IPs da Rede e Nomes de Hosts
 -----------------------------------------------------------------------------------------------------
 |  DESCRICAO  |  IP             |   hostname        |               FQDN               |   aliase   |
 -----------------------------------------------------------------------------------------------------
+| Rede        | 192.168.24.32   |
+| máscara     | 255.255.255.0   |   
+| gateway     | 192.168.24.33   |
 | VM1-PC1     | 192.168.24.33   |   srv-vm1-pc1     | dosons1.grupo3-924.ifalara.net   |   dosons   |
 | VM2-PC1     | 192.168.24.34   |   srv-vm2-pc1     | dosons2.grupo3-924.ifalara.net   |   vitor    |
 | VM1-PC2     | 192.168.24.35   |   srv-vm1-pc2     | clara1.grupo3-924.ifalara.net    |   clara    |
