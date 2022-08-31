@@ -70,6 +70,9 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 -----------------------------------------------------------------------------------------------------
 |  DESCRICAO  |  IP             |   hostname        |               FQDN               |   aliase   |
 -----------------------------------------------------------------------------------------------------
+| Rede        | 192.168.24.32   |
+| máscara     | 255.255.255.0   |   
+| gateway     | 192.168.24.33   |
 | VM1-PC1     | 192.168.24.33   |   srv-vm1-pc1     | dosons1.grupo3-924.ifalara.net   |   dosons   |
 | VM2-PC1     | 192.168.24.34   |   srv-vm2-pc1     | dosons2.grupo3-924.ifalara.net   |   vitor    |
 | VM1-PC2     | 192.168.24.35   |   srv-vm1-pc2     | clara1.grupo3-924.ifalara.net    |   clara    |
@@ -83,6 +86,27 @@ Tabela 1: Definições de endereços IPs da Rede e Nomes de Hosts
 -----------------------------------------------------------------------------------------------------
 
 ## Instalando o Sistema
+
+### Especificações de hardware
+
+#### Tabela com as especificações de todas as máquinas virtuais utilizadas
+
+```
+-------------------------------
+| Máquina |  RAM  | CPU | HD  |
+-------------------------------
+|VM1-PC1  |1024MB |2    |10GB |
+|VM2-PC1  |1024MB |2    |10GB |
+|VM1-PC2  |1024MB |2    |10GB |
+|VM2-PC2  |1024MB |2    |10GB |
+|VM1-PC3  |1024MB |2    |10GB |
+|VM2-PC3  |1024MB |2    |10GB |
+|VM1-PC4  |1024MB |2    |10GB |
+|VM2-PC4  |1024MB |2    |10GB |
+-------------------------------
+```
+
+#
 
 ### 1. Baixar ISO
 
