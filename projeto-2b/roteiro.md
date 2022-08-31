@@ -35,6 +35,10 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 1. [Ping](#1-ping)
 2. [SSH](#2-ssh)
 
+### [Clonando Máquina Virtual](#)
+
+1. Exportar máquina criada
+2. Importar máquina criada
 ----------------------------------------------------------------------------------------------------
 
 ## Abordagem geral
