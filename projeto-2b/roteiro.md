@@ -39,6 +39,8 @@ Neste roteiro/tutorial iremos auxiliar na criação de uma rede do tipo estrela 
 
 1. Exportar máquina criada
 2. Importar máquina criada
+3. Re-configurar servidor
+
 ----------------------------------------------------------------------------------------------------
 
 ## Abordagem geral
@@ -556,3 +558,35 @@ Agora que todos os passos foram realizados corretamente o último passo é fazer
 
 <p><center> Figura 8.8: Acesso ao usuario dosons na VM2 do PC3 via ssh a partir da VM2 do PC4 utilizando o hostname</center></p>   
 <img src="figures/resultados/ssh-8.png" title="Figura 8.8: Acesso ao usuario dosons na VM2 do PC3 via ssh a partir da VM2 do PC4 utilizando o hostname" width="800" />
+
+---------------------------------------------------------------------------------------------------------
+
+## Clonando Máquina Virtual
+
+Agora que já foi mostrado como criar e configurar um servidor Ubunutu do zero, para facilitar e agilizar o processo, essa seção de bonus irá descrever passo a passo como utilizar uma máquina já criada para fazer todas as outras sem que seja precisa repetir o processo de instalação e criação dos servidores do zero varias vezes.
+
+### 1. Exportar máquina criada
+
+Para exportar uma máquina virtual como arquivo .OVA para utilizar ela como base para as outras VM você deve inicialmente cssar a aba `Arquivo` do VirtualBox e clicar na opção `Exportar Appliance...`, como mostra a figura 9.1 
+
+<p><center> Figura 9.1: Exportar Appliance</center></p>   
+<img src="figures/exportar-vm-1.png" title="Figura 9.1: Exportar Appliance" width="500" />
+
+Após isso, na proxima tela você deve seleciopnar qual das suas máquinas virtuais criadas você deseja clonar, utilizaremos a ma´quina `VM1-PC1`, como mostra a figura 9.2
+
+<p><center> Figura 9.2: Selecionar máquina virtual</center></p>   
+<img src="figures/exportar-vm-2.png" title="Figura 9.2: Selecionar máquina virtual" width="800" />
+
+Agora você deve selecionar algumas configurações para a exportação da sua máquina virtual, como: Formato, Nome e local do arquivo e a politica de endereços MAC, na nossa prática iremos manter o primeiro e o ultimo campo como padrões, e iremos direcionar o arquivo para o diretorio `C:\Users\doson\Documents`  com o nome `VM1-PC1.ova`, como na figura 9.3
+
+<p><center> Figura 9.3: Configurações de exportaçãoo</center></p>   
+<img src="figures/exportar-vm-3.png" title="Figura 9.3: Configurações de exportaçãoo" width="800" />
+
+Por ultimo você deve informar alguns detalhes da Vm, caso queira, na nossa prática iremos informar apenas o nome da VM, como mostra a figura 9.4
+
+<p><center> Figura 9.4: Detalhes da VM</center></p>   
+<img src="figures/exportar-vm-4.png" title="Figura 9.4: Detalhes da VM" width="800" />
+
+### 2. Importar máquina criada
+### 3. Re-configurar servidor
+
